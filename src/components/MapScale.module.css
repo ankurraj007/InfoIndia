@@ -1,0 +1,86 @@
+.scaleBar {
+  height: 0.75em;
+  border-radius: 1em;
+  width: 80%;
+  min-width: 100px;
+  max-width: 400px;
+  display: block;
+  align-self: center;
+  border: black solid 2px;
+  transition: width 0.3s;
+}
+
+.scalebg2 {
+  background: linear-gradient(45deg, #ffe5e5, #800000);
+}
+
+.scalebg1 {
+  background: linear-gradient(45deg, #e1fffe, #00504c);
+}
+
+.scalebg4 {
+  background: linear-gradient(45deg, #e6ffe6, #0d330d);
+}
+
+.scalebg3 {
+  background: linear-gradient(45deg, #f5e6ff, #330066);
+}
+
+.scale {
+  width: fit-content;
+  max-width: 400px;
+  min-width: 120px;
+  height: auto;
+  background: none !important;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  left: 2vw;
+  bottom: 8vh;
+  justify-content: center;
+  z-index: 10;
+  pointer-events: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .scale {
+    width: fit-content;
+    max-width: 95vw;
+    min-width: 80px;
+    left: 2vw;
+    bottom: 4vh;
+    position: fixed;
+    pointer-events: none;
+  }
+  .scaleBar {
+    width: 70vw;
+    min-width: 80px;
+    max-width: 95vw;
+  }
+  .marking {
+    font-size: 0.95em;
+    padding: 0 0.2em 0 0.5em;
+  }
+  .markItem {
+    margin: 0 0.2em;
+  }
+}
+
+.marking {
+  color: black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 0.8em 0 1.2em;
+  margin-top: 0.8em;
+  width: 100%;
+}
+
+.markItem {
+  flex: 1;
+  text-align: center;
+  font-size: 1em;
+  min-width: 30px;
+  margin: 0 0.4em;
+  word-break: break-word;
+}

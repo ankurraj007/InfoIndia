@@ -1,0 +1,112 @@
+h2 {
+  padding: 0px 3rem;
+  margin-top: 2px !important;
+  margin-bottom: 6px !important;
+}
+
+.info {
+  margin: auto;
+  padding: 6px;
+  margin-bottom: 0.8rem !important;
+}
+
+.maincontainer {
+  width: 16rem;
+  padding: 16px;
+  padding-bottom: 6px !important;
+  margin: 2.8rem;
+  position: absolute;
+  top: 3rem;
+  right: 0;
+  border-radius: 0.5rem;
+  cursor: grab !important;
+  background-color: rgba(15, 16, 17, 0.96);
+  color: white;
+}
+
+@media screen and (max-width: 767px) {
+  .maincontainer {
+    width: 12rem;
+    padding: 12px;
+    padding-bottom: 6px !important;
+    margin: 0.5rem;
+    position: absolute;
+    top: 3rem;
+    right: 0;
+    border-radius: 0.5rem;
+    cursor: grab !important;
+    background-color: rgba(15, 16, 17, 0.96);
+    color: white;
+  }
+}
+
+.slider1 {
+  margin: 0.8rem 1rem;
+  color: white;
+  margin-bottom: 0.5rem;
+}
+
+.labels {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.labels p {
+  margin-top: 0px;
+  font-size: 1rem;
+}
+
+select {
+  --gray: #2a3c4d;
+  --darkgray: #243443;
+  outline: 0;
+  border: 0;
+  box-shadow: none;
+  /* Personalize */
+  flex: 1;
+  padding: 0 1em;
+  color: #fff;
+  background-color: var(--darkgray);
+  background-image: none;
+  cursor: pointer;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+.select {
+  position: relative;
+  display: flex;
+  height: 2.75em;
+  border-radius: 0.25em;
+}
+
+.select::after {
+  content: "\25BC";
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0.75em;
+  background-color: #1a242c;
+  transition: 0.25s all ease;
+}
+/* Transition */
+.select:hover::after {
+  color: #f39c12;
+}
+
+/* Other styles*/
+
+h1 {
+  margin: 0 0 0.25em;
+}
+a {
+  font-weight: bold;
+  color: var(--gray);
+  text-decoration: none;
+  padding: 0.25em;
+  border-radius: 0.25em;
+  background: white;
+}

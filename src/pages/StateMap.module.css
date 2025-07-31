@@ -1,0 +1,54 @@
+.statemap{
+    width: 90%;
+    height: 60vh;
+    border: 4px solid black;
+    margin: 4.5rem 2rem;
+    cursor: default important;
+    display: flex;
+    flex-direction: column;
+    
+}
+.backbtn{
+    /* margin: 1rem; */
+    position: fixed;
+    top: 1.5rem;
+    left: 1.5rem;
+}
+
+.backarrow{
+    padding-left: 22px;
+    padding-right: 29px;
+    padding-top: 10px;
+  }
+
+.container{
+    height: 99vh;
+}
+
+.graphcontainer{
+    margin-top: 2rem !important;
+}
+
+.innercontainer{
+  
+    height: 90%;
+    margin: 5vh 1vw;
+    padding: 2rem;
+}
+
+.label{
+    width: 100%;
+    height: 10%;
+    padding: 6px 0px;
+    opacity: 0.8;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -8%;
+}
+
+.maps{
+    cursor: default;
+}

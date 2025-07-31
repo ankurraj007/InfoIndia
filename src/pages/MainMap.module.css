@@ -1,0 +1,46 @@
+.Popup {
+  background-color: black important;
+  opacity: 0.9;
+  margin: 0;
+  padding: 0;
+}
+
+.Attribute {
+  margin: 0;
+}
+
+h3 {
+  margin: 0;
+}
+.mapContainer {
+  width: 100vw;
+  height: 98vh;
+  /* background-color: #def3f6b1; */
+  display: flex;
+}
+
+.map {
+  width: 60vw;
+  max-width: 100%;
+  height: auto;
+
+  margin: 0 auto;
+  position: relative;
+  display: block;
+}
+
+/* Responsive Fix for Smaller Screens */
+@media screen and (max-width: 960px) {
+  .map {
+    width: 90vw; /* Wider for small screens */
+    height: auto; /* Let height adjust */
+    margin: 0 auto; /* Center horizontally */
+    position: relative; /* Keep in flow */
+  }
+}
+
+.warn {
+  position: absolute;
+  top: 1rem;
+  right: 2rem;
+}
