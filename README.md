@@ -4,7 +4,7 @@ Explore historic state-wise statistics of India including literacy rate, sex rat
 [https://infoindia.vercel.app/](https://infoindia.vercel.app/)
 
 ## 🖼 Screenshots
-![Homepage Screenshot](https://github.com/ankurraj007/Echelon-Watches/blob/main/Screenshot%202025-03-17%20192034.png?raw=true)
+![Homepage Screenshot](https://github.com/ankurraj007/InfoIndia/blob/main/Screenshot%202025-10-27%20141940.png?raw=true)
 ## Tech Stack
 
 ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
