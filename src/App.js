@@ -1,32 +1,33 @@
 
 import './App.css';
 import { RouterProvider, createBrowserRouter } from 'react-router-dom'
-
+import { Analytics } from "@vercel/analytics/react"
 
 import RootLayout from './pages/RootLayout';
-import MainMap,{loader as MainMapLoader} from './pages/MainMap';
+import MainMap, { loader as MainMapLoader } from './pages/MainMap';
 import StateMap from './pages/StateMap';
-import {loader as stateloader} from './pages/StateMap';
+import { loader as stateloader } from './pages/StateMap';
 import ErrorPage from './pages/ErrorPage';
 
 const router = createBrowserRouter([
-  { path: '/',
-    element: <RootLayout/>,
-   
+  {
+    path: '/',
+    element: <RootLayout />,
+
     id: 'main',
-    children:[{ 
+    children: [{
       index: true,
-      element: <MainMap/>,
+      element: <MainMap />,
       loader: MainMapLoader
-    },{
-      path : ':id',
-      element: <StateMap/>,
+    }, {
+      path: ':id',
+      element: <StateMap />,
       loader: stateloader,
-      
+
 
     }
 
-    ] 
+    ]
   }
 ]
 );
@@ -35,7 +36,7 @@ const router = createBrowserRouter([
 function App() {
 
   return (
-    <RouterProvider router = { router }/>
+    <RouterProvider router={router} />
   );
 }
 
